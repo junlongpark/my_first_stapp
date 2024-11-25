@@ -7,20 +7,20 @@ import pyogrio
 from streamlit_folium import st_folium
 # geopandas 라이브러리 불러오기
 # geopandas의 read_file 함수로 데이터 불러오기
-gdf_seoul_gu = gpd.read_file('C:/Users/junlo/Desktop/데이터시각/TL_SCCO_SIG.json')
+gdf_seoul_gu = gpd.read_file('TL_SCCO_SIG.json')
 gdf_seoul_gu
 
 import chardet    #문자 인코딩을 감지하는데 사용되는 라이브러리
 import pandas as pd
 
 # 파일의 인코딩 감지
-with open('C:/Users/junlo/Desktop/데이터시각/연령별_출산율_및_합계출산율_행정구역별__20241121103459.csv', 'rb') as file:
+with open('연령별_출산율_및_합계출산율_행정구역별__20241121103459.csv', 'rb') as file:
     result = chardet.detect(file.read())
     print(result['encoding'])  # 파일의 인코딩 출력
 
 # 감지된 인코딩으로 파일 읽기 
 df_seoul_pop = pd.read_csv(
-    'C:/Users/junlo/Desktop/데이터시각/연령별_출산율_및_합계출산율_행정구역별__20241121103459.csv',
+    '연령별_출산율_및_합계출산율_행정구역별__20241121103459.csv',
     encoding=result['encoding'],
     header=1
 )
