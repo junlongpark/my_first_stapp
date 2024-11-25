@@ -5,5 +5,5 @@ fiona
 shapely
 pyproj
 rtree
-GDAL==3.7.0
+
 
