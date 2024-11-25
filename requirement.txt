@@ -6,3 +6,12 @@ fiona
 pyogrio
 st_folium
 chardet
+streamlit
+streamlit-folium
+geopandas
+folium
+fiona
+shapely
+pyproj
+rtree
+GDAL==3.7.0
