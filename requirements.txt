@@ -6,4 +6,4 @@ shapely
 pyproj
 rtree
 pyogrio
-
+chardet
