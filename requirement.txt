@@ -1,1 +1,8 @@
 plotly
+pandas
+geopandas
+folium
+fiona
+pyogrio
+st_folium
+chardet
