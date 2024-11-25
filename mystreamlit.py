@@ -26,7 +26,7 @@ df_seoul_pop = pd.read_csv(
 )
 df_seoul_pop
 
-df_seoul_pop.columns = ['행정구', '인구수']   #컬럼 네임 지정
+df_seoul_pop.columns = ['행정구', '출산율']   #컬럼 네임 지정
 
 df_seoul_pop
 
@@ -46,7 +46,7 @@ gu_map = folium.Map(
 Choropleth(
     geo_data=gdf_seoul_gu,
     data=df_seoul_pop,
-    columns=('행정구', '인구수'),
+    columns=('행정구', '출산율'),
     key_on='feature.properties.SIG_KOR_NM',
     fill_color='BuPu',
     fill_opacity=0.7,
